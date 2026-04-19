@@ -26,3 +26,14 @@ This project is for checking in and out of the UMBC campus. It scans IDs to veri
 * **Face Detection**: Acts as a trigger so it only starts scanning when someones id is actually in front of the camera.
 * **Pandas**: Used to manage the database file and remove people when they sign out.
 * **Database**: Sign-In_Log.csv stores the name, id number, and timestamp.
+
+
+# What you need to download
+
+
+You need to have Python 3.9 installed. 
+
+Run this command to get the required libraries:
+
+bash
+pip install opencv-python easyocr face_recognition pandas pillow
