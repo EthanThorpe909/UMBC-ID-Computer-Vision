@@ -1,7 +1,7 @@
 This project is for checking in and out of the UMBC campus. It scans IDs to verify information and keeps an active list of who is currently signed in.
 
 
-# HOW IT WORKS
+# How it Works
 
 
 * **Host and Guest Sequence**: The first ID scanned is the host ID. The second ID scanned is the person who wants to check in.
@@ -10,7 +10,7 @@ This project is for checking in and out of the UMBC campus. It scans IDs to veri
 * **Active Sign-Out**: For the sign out, it checks if the person is already in the csv file and removes them after they are scanned. 
 * **ID Validation**: It specifically looks for the 7 character ID for both the person signing in and the person checking in.
 
-# CONTROLS
+# Controls
 
 
 * **'i'**: Start Sign-In mode.
@@ -19,10 +19,10 @@ This project is for checking in and out of the UMBC campus. It scans IDs to veri
 * **'n'**: Reject the scan and rescan.
 * **'q'**: Quit the program.
 
-# TECHNICAL SPECS
+# Specs
 
 
 * **EasyOCR**: Brain of the project that recognizes the text on the ID.
-* **Face Detection**: Acts as a trigger so it only starts scanning when someone is actually in front of the camera.
+* **Face Detection**: Acts as a trigger so it only starts scanning when someones id is actually in front of the camera.
 * **Pandas**: Used to manage the database file and remove people when they sign out.
 * **Database**: Sign-In_Log.csv stores the name, id number, and timestamp.
